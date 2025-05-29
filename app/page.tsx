@@ -21,7 +21,7 @@ export default function Page() {
 
       const data = await res.json();
       setResult(data.output || '⚠️ Keine Antwort erhalten.');
-    } catch (err) {
+    } catch   {
       setResult('❌ Fehler bei der Analyse. Bitte später erneut versuchen.');
     } finally {
       setLoading(false);
